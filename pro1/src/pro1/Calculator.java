@@ -17,7 +17,7 @@ public class Calculator extends JFrame { // Client-based calculator
 		private static float CNY_RATE = 163.30F;
 		private static float GBP_RATE = 1444.35F;
 		private static float EUR_RATE = 1295.97F;
-		// exchange rate
+		// exchange rate 
 		
 		JLabel title = new JLabel("Won");
 		JTextField operand1 = new JTextField(10);
