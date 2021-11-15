@@ -19,7 +19,7 @@ public class Calculator extends JFrame { // Client-based calculator
 		private static float EUR_RATE = 1295.97F;
 		// exchange rate
 		
-		JLabel title = new JLabel("USD");
+		JLabel title = new JLabel("Won");
 		JTextField operand1 = new JTextField(10);
 		String[] opExpression = {"Choice","USD", "JPY", "CNY","GBP","EUR"};
 		JComboBox<String> opSelection = new JComboBox<String>(opExpression);
