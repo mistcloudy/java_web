@@ -43,8 +43,8 @@ public class LoginServlet5 extends HttpServlet {
 		String id = request.getParameter("user_id");
 		String pw = request.getParameter("user_pw");
 		String address = request.getParameter("user_address"); // Receive hidden tag
-		System.out.println("아이디   : " + id);
-		System.out.println("비밀번호 : " + pw);
+		System.out.println("Id   : " + id);
+		System.out.println("Password : " + pw);
 
 		String data = "<html>"; // Print Web browser
 		data += "<body>";
