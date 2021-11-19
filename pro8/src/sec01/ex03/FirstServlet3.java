@@ -27,4 +27,4 @@ public class FirstServlet3 extends HttpServlet {
 	      out.print("</script>");
 	}
 
-} // Call due to location
+} // Call another servlet with location
