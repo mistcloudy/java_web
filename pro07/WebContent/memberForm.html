@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Membership window</title>
+<script type="text/javascript">
+function fn_sendMember(){
+   var frmMember=document.frmMember;
+   var id=frmMember.id.value;
+   var pwd=frmMember.pwd.value;
+   var name=frmMember.name.value;
+   var email=frmMember.email.value;
+   if(id.length==0 ||id==""){
+      alert("Id is a must.");
+   }else if(pwd.length==0 ||pwd==""){
+      alert("Password is a must.");
+   }
+   else if(name.length==0 ||name==""){
+      alert("Name  is a must.");
+   }else if(email.length==0 ||email==""){
+      alert("Email is a must.");
+   }else{
+      frmMember.method="post";
+      frmMember.action="member4";
+      frmMember.submit();
+   } 
+}
+</script>
+</head>
+<body>
+  <form name="frmMember">
+  <table>
+	   <th>Membership window</th>
+	  <tr>
+		<td>Id</td>
+		<td><input type="text" name="id"></td>
+	  </tr>
+	  <tr>
+		<td>Password</td>
+		<td><input type="password" name="pwd"></td>
+	  </tr>
+	  <tr>
+		<td>Name</td>
+		<td><input type="text" name="name"></td>
+	  </tr>
+	    <tr>
+		<td>Email</td>
+		<td><input type="text" name="email"></td>
+	  </tr>
+  </table>
+   <input type="button" value="Join" onclick="fn_sendMember()">
+   <input type="reset" value="Re-Input">
+   <input  type="hidden" name="command" value="addMember" />	
+  </form>
+ </body>
+</html>
