@@ -1,0 +1,43 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+ <title> Use cookies in JavaScript </title>
+ <script type = "text/javascript">
+  // Processing page loading events
+  window.onload = pageLoad;
+  function pageLoad(){
+  // Read the saved cookies
+   notShowPop =getCookieValue();
+   if(notShowPop!="true"){
+      window.open("popUp.html","pop","width=400,height=500,history=no,resizable=no,status=no,scrollbars=yes,menubar=no");
+   }
+  }
+
+  // The function of reading cookies
+  function getCookieValue(){   
+     var result="false";
+   // Check if it's a cookie
+    if(document.cookie != ""){
+      cookie = document.cookie.split(";"); 
+      for(var i=0; i<cookie.length;i++){
+	element=cookie[i].split("=");
+	value=element[0];				 
+	value=value.replace(/^\s*/,''); 
+	if(value=="notShowPop"){
+	 result= element[1];
+        }
+      }
+   }
+   return result;
+  }
+ function  deleteCookie(){
+    document.cookie = "notShowPop=" + "false" + ";path=/; expires=-1" ;
+  }
+ </script>
+</head>
+<body>
+  <form>
+    <input type=button value="Delete cookie"  onClick="deleteCookie()" >
+  </form>
+</body>
+</html> <!-- Pop-up windows using cookies are restricted.  -->
