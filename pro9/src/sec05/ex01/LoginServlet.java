@@ -64,5 +64,5 @@ public class LoginServlet extends HttpServlet {
 		doHandle(request, response);
 	}
 
-} // Binding membership information between the two servlets.
+} // Log in using a session
  
