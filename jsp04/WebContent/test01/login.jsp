@@ -11,7 +11,7 @@ isELIgnored="false"  %>
    <form action="result.jsp">
 	   id : <input type="text" size=20 /><br>
 	   pwd : <input  type="password"  size=20 /><br>
-	   <input  type="submit" value="login" /> <input type="reset" value="다시입력"  />
+	   <input  type="submit" value="login" /> <input type="reset" value="reinput"  />
    </form> 
    <br><br>
    <a href="${pageContext.request.contextPath}/test01/memberForm.jsp">join</a>   
