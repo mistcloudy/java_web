@@ -9,4 +9,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  
+  <servlet>
+  	<servlet-name>controlOne</servlet-name>
+  	<servlet-class>mvc.control.ControlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>controlOne</servlet-name>
+  <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>mycontrolOne</servlet-name>
+  	<servlet-class>mvcmem.control.ControlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mycontrolOne</servlet-name>
+  <url-pattern>*.mdo</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
